@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('img/download.jpg');
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.CalculteAge{
+    display: block;
+    width: 500px;
+    height: 70vh;
+    padding: 20px 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 249, 249);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    margin: 100px auto;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+.input{
+    padding: 20px 10px;
+    display: flex;
+    margin: auto;
+}
+.inputbox p{
+    margin: 5px 0px;
+}
+.inputbox{
+    margin: 50px auto;
+    width: 30%;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+   
+    
+
+}
+.inputbox input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 19px;
+    color: gray;
+    outline: 0;
+    border: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.submitBox input{
+    padding: 8px 15px; 
+    color: white;
+    background: rgb(3, 78, 240);
+    border: none;
+    font-size: 18px ;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: -100px;
+}
+#age{
+    margin: 10px;
+   font-weight: bold;
+    color: navy;
+    font-size: 26px;
+    padding: 15px ;
+    text-transform: lowercase;
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .CalculteAge{
+    display: block;
+    width: 90%;
+   } 
+}
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .CalculteAge{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+    }
+    .input{
+    padding: 20px 10px;
+    display: block;
+    margin: auto;
+}
+.inputbox{
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .CalculteAge{
+    display: block;
+    width: 90%;
+    height: 100vh;
+    margin: 40px auto;
+    }
+    .input{
+    padding: 20px 10px;
+    display: block;
+    margin: auto;
+}
+.inputbox{
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="CalculteAge">
+      <h1>Calculate your age</h1>
+      <div class="input">
+        <div class="inputbox">
+          <p>Day</p>
+          <form action="/action_page.php">
+            <input
+              type="number"
+              class="clear"
+              placeholder="dd"
+              name="date"
+              id="date"
+              minlength="1"
+              maxlength="2"
+              required
+            />
+          </form>
+        </div>
+        <div class="inputbox">
+          <p>Month</p>
+          <form action="/action_page.php">
+            <input
+              type="number"
+              class="clear"
+              placeholder="mm"
+              name="month"
+              id="month"
+              minlength="1"
+              maxlength="2"
+              required
+            />
+          </form>
+        </div>
+        <div class="inputbox">
+          <p>Year</p>
+          <form action="/action_page.php">
+            <input
+              type="number"
+              class="clear"
+              placeholder="yyyy"
+              name="year"
+              id="year"
+              minlength="4"
+              maxlength="4"
+              required
+            />
+          </form>
+        </div>
+      </div>
+      <div class="submitBox">
+        <input type="submit" value="Submit" name="submit" id="submit" onclick="age()" />
+        <input type="reset" onclick="reset()" value="Reset" />
+      </div>
+      <div id="age"></div>
+      <div id="reset"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
